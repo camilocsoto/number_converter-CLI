@@ -79,6 +79,7 @@ class ConvertService:
 
 
 if __name__ == '__main__':
+    print(f"{'='*5} Bienvenido a la calculadora conversora.{'='*5} \n Usa puntos (.) no comas (,)")
     in_user = int(input("1 → binario \n 2 → octal \n 3 → decimal \n 4 → hexadecimal \n digíta el tipo de número que vas a insertar: "))
     out_user= int(input("\n 1 → binario \n 2 → octal \n 3 → decimal \n 4 → hexadecimal \n Digíta el tipo de número que quieres obtener: "))
     user_request = input("\n Digita el número a convertir: ")

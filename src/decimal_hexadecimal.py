@@ -4,7 +4,7 @@ class Decimal_hexadecimal(ConvertInt):
 
     def next_transform(self, num_to_transform:str) -> str:
         # decimal to hexadecimal
-        dividendo = int(num_to_transform)
+        dividendo = int(num_to_transform.split('.')[0]) # borra la mantisa
         residuo = ''
         while dividendo > 0: # parte entera
             if dividendo < 16:
@@ -19,8 +19,17 @@ class Decimal_hexadecimal(ConvertInt):
             else:
                 residuo += str(modulo) #sin letras
             dividendo = dividendo//16 # sin mantiza     
-
         hexadecimal = residuo[::-1] #invierte el orden
+        
+        # mantisa 
+        if '.' in num_to_transform:
+            index = num_to_transform.index('.')
+            mantisa = num_to_transform[index+1]
+            unir_matinsa = float(mantisa)*16
+            unir_matinsa = str(unir_matinsa)
+            hexadecimal+=f'.{unir_matinsa[0]}'
+        else:
+            pass
         return hexadecimal
     
     def reverse_transform(self, num_to_transform:str) -> str:

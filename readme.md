@@ -12,6 +12,6 @@ El siguiente proyecto soporta las siguientes conversiones:
 Tiene mucho acoplamiento en service.py
 
 ## Diagrama de clases:
-<img src="https://tinypic.host/images/2025/02/26/classs_diagram.png" alt="diagrama de clases" />  
+<img src="https://tinypic.host/images/2025/02/26/classs_diagram2.png" alt="diagrama de clases" />  
 
 Hecho con: Luisa Ariza
