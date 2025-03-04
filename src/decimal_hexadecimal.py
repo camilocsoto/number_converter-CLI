@@ -84,4 +84,3 @@ class Decimal_hexadecimal(ConvertInt):
             case "E": return "14"
             case "F": return "15"
             case _: return f"{num_to_transform} not valid"
-            
